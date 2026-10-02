@@ -1,0 +1,239 @@
+{
+  "description": "Evaluation set for the XAI clinical RAG assistant. known_item: questions written about one specific paper (paraphrased, not copied from titles) -- the app should rank that paper highly. topics: broad questions; a retrieved paper counts as on-topic if its title+abstract matches the pattern (keyword-based 'silver' labels). off_topic: questions the app should refuse.",
+  "known_item": [
+    {
+      "question": "Is there a way to measure how useful an AI explanation is to clinicians, based on ideas from the social sciences?",
+      "paper_id": "paper_220",
+      "title": "Evaluating Explanations From AI Algorithms for Clinical Decision-Making: A Social Science-Based Approach"
+    },
+    {
+      "question": "Hypergraph-based vision transformer for classifying several co-existing eye diseases at once",
+      "paper_id": "paper_358",
+      "title": "A Multi-Resolution Hypergraph Transformer for Explainable Retinal Disease Prediction"
+    },
+    {
+      "question": "Detecting monkeypox from skin images with fine-tuned ConvNeXt networks",
+      "paper_id": "paper_27",
+      "title": "Explainable clinical diagnosis through unexploited yet Optimized Fine-tuned ConvNeXt Models for accurate Monkeypox Disease Classification."
+    },
+    {
+      "question": "Small, efficient deep learning models that spot early Alzheimer's on routine brain scans",
+      "paper_id": "paper_41",
+      "title": "Lightweight Deep Learning Models with Explainable AI for Early Alzheimer’s Detection from Standard MRI Scans"
+    },
+    {
+      "question": "Using blood test results to tell iron deficiency anaemia apart from aplastic anaemia",
+      "paper_id": "paper_56",
+      "title": "Differential diagnosis of iron deficiency anemia from aplastic anemia using machine learning and explainable Artificial Intelligence utilizing blood attributes"
+    },
+    {
+      "question": "Radiomic MRI features with a random forest to classify bone and soft tissue tumours",
+      "paper_id": "paper_205",
+      "title": "An Explainable Radiomics-Based Classification Model for Sarcoma Diagnosis"
+    },
+    {
+      "question": "Review of AI for head and neck skin cancers from both radiology and pathology viewpoints",
+      "paper_id": "paper_321",
+      "title": "The Role of Artificial Intelligence in Early Diagnosis and Molecular Classification of Head and Neck Skin Cancers: A Multidisciplinary Approach"
+    },
+    {
+      "question": "Pap smear images classified with pre-trained CNN features and a fuzzy min-max neural network",
+      "paper_id": "paper_494",
+      "title": "Hybridization of Deep Learning Pre-Trained Models with Machine Learning Classifiers and Fuzzy Min–Max Neural Network for Cervical Cancer Diagnosis"
+    },
+    {
+      "question": "Using GAN-generated synthetic brain signals to improve epileptic seizure classification",
+      "paper_id": "paper_278",
+      "title": "Enhancing Medical Signal Processing and Diagnosis With AI-Generated Content Techniques"
+    },
+    {
+      "question": "Predicting neuropeptides with protein language models and temporal convolutional networks",
+      "paper_id": "paper_125",
+      "title": "NeuroPred-AIMP: Multimodal Deep Learning for Neuropeptide Prediction via Protein Language Modeling and Temporal Convolutional Networks"
+    },
+    {
+      "question": "Counterfactual explanations for classifying thyroid disorders from tabular patient data",
+      "paper_id": "paper_22",
+      "title": "Enhancing Thyroid Disease Diagnosis With Machine Learning and Counterfactual Explainable AI"
+    },
+    {
+      "question": "Brain tumour detection on BRATS explained with three different XAI techniques",
+      "paper_id": "paper_51",
+      "title": "Explainable deep learning framework for brain tumor detection: Integrating LIME, Grad-CAM, and SHAP for enhanced accuracy."
+    },
+    {
+      "question": "Grading knee osteoarthritis from X-rays using a no-code deep learning platform",
+      "paper_id": "paper_240",
+      "title": "Automated Diagnosis of Knee Osteoarthritis Using ResNet101 on a DEEP:PHI: Leveraging a No-Code AI Platform for Efficient and Accurate Medical Image Analysis"
+    },
+    {
+      "question": "A framework for evaluating diagnostic AI as an evidence pipeline that goes beyond accuracy and AUC",
+      "paper_id": "paper_232",
+      "title": "TRIAGE: Trustworthy Reporting and Assessment for Clinical Gain and Effectiveness of AI Models"
+    },
+    {
+      "question": "Combining handwriting, gait and voice data to detect Parkinson's disease",
+      "paper_id": "paper_139",
+      "title": "Explainable multimodal feature fusion networks for Parkinson's disease prediction"
+    },
+    {
+      "question": "GAN data augmentation with an ensemble of EfficientNet, DenseNet and InceptionResNet for skin conditions",
+      "paper_id": "paper_53",
+      "title": "CHASHNIt for enhancing skin disease classification using GAN augmented hybrid model with LIME and SHAP based XAI heatmaps"
+    },
+    {
+      "question": "Removing light glare in diagnostic imaging cameras by rotating a polarising filter",
+      "paper_id": "paper_304",
+      "title": "Removal of Specular Reflection Using Angle Adjustment of Linear Polarized Filter in Medical Imaging Diagnosis"
+    },
+    {
+      "question": "Swin transformer with cross-attention fusing mammogram views, 3D volumes and clinical data",
+      "paper_id": "paper_235",
+      "title": "SwinCAMF-Net: Explainable Cross-Attention Multimodal Swin Network for Mammogram Analysis"
+    },
+    {
+      "question": "Layer-wise relevance propagation to explain CNN classification of dopamine transporter SPECT scans",
+      "paper_id": "paper_33",
+      "title": "Explainable AI to improve acceptance of convolutional neural networks for automatic classification of dopamine transporter SPECT in the diagnosis of clinically uncertain parkinsonian syndromes"
+    },
+    {
+      "question": "Asynchronous federated deep learning for predicting heart disease",
+      "paper_id": "paper_452",
+      "title": "Asynchronous Federated Learning for Improved Cardiovascular Disease Prediction Using Artificial Intelligence"
+    },
+    {
+      "question": "Combining large language models with a hybrid transformer to diagnose from medical images",
+      "paper_id": "paper_311",
+      "title": "A LLM-Based Hybrid-Transformer Diagnosis System in Healthcare"
+    },
+    {
+      "question": "Uncertainty-based ensemble voting to classify COVID-19 on chest radiographs with explanations",
+      "paper_id": "paper_346",
+      "title": "Uncertain-CAM: Uncertainty-Based Ensemble Machine Voting for Improved COVID-19 CXR Classification and Explainability"
+    },
+    {
+      "question": "Graph neural network modelling gene-gene interactions to improve polygenic risk scores",
+      "paper_id": "paper_130",
+      "title": "Modeling gene interactions in polygenic prediction via geometric deep learning"
+    },
+    {
+      "question": "Training retinal disease classifiers that cope with both mislabelled and poor-quality images",
+      "paper_id": "paper_318",
+      "title": "QMix: Quality-Aware Learning With Mixed Noise for Robust Retinal Disease Diagnosis"
+    },
+    {
+      "question": "A histopathology dataset for classifying tissue after miscarriage",
+      "paper_id": "paper_322",
+      "title": "Computer-Aided Diagnosis in Spontaneous Abortion: A Histopathology Dataset and Benchmark for Products of Conception"
+    },
+    {
+      "question": "Systematic review of 76 studies on explainable AI in healthcare published from 2020 to 2025",
+      "paper_id": "paper_90",
+      "title": "Explainable AI Applications in Healthcare: A Systematic Review"
+    },
+    {
+      "question": "Explainable gradient boosting application for diagnosing lung cancer from a Kaggle dataset",
+      "paper_id": "paper_75",
+      "title": "XML-GBM lung: An explainable machine learning-based application for the diagnosis of lung cancer."
+    },
+    {
+      "question": "Survey of AI for diagnosing chest conditions such as pneumonia, tuberculosis and cardiomegaly from images",
+      "paper_id": "paper_295",
+      "title": "A Survey on AI Techniques for Thoracic Diseases Diagnosis Using Medical Images"
+    }
+  ],
+  "topics": [
+    {
+      "question": "How is SHAP used to interpret clinical prediction models?",
+      "pattern": "\\bshap\\b|shapley"
+    },
+    {
+      "question": "How is LIME used to explain medical diagnosis models?",
+      "pattern": "\\blime\\b|local interpretable model"
+    },
+    {
+      "question": "How is Grad-CAM used to show what CNNs focus on in medical images?",
+      "pattern": "grad-?cam|class activation"
+    },
+    {
+      "question": "Explainable AI for Alzheimer's disease detection",
+      "pattern": "alzheimer|dementia"
+    },
+    {
+      "question": "Explainable deep learning for retinal and fundus image analysis",
+      "pattern": "retin|fundus|ophthalm"
+    },
+    {
+      "question": "Interpretable models for electrocardiogram analysis",
+      "pattern": "\\becg\\b|electrocardio"
+    },
+    {
+      "question": "Explainable AI for COVID-19 detection",
+      "pattern": "covid|sars-cov|coronavirus"
+    },
+    {
+      "question": "Explainable methods for skin lesion and melanoma classification",
+      "pattern": "skin|dermat|melanoma"
+    },
+    {
+      "question": "Interpretable breast cancer diagnosis",
+      "pattern": "breast|mammogra"
+    },
+    {
+      "question": "Explainable chest X-ray diagnosis",
+      "pattern": "chest x-?ray|radiograph|\\bcxr\\b|thoracic"
+    },
+    {
+      "question": "Explainable analysis of histopathology slides",
+      "pattern": "histopath|whole slide|patholog"
+    },
+    {
+      "question": "Explainable Parkinson's disease detection",
+      "pattern": "parkinson"
+    },
+    {
+      "question": "Interpretable EEG analysis for seizures",
+      "pattern": "\\beeg\\b|electroencephalo|seizure|epilep"
+    },
+    {
+      "question": "Federated learning with explainability in healthcare",
+      "pattern": "federated"
+    },
+    {
+      "question": "Large language models for clinical diagnosis and explanation",
+      "pattern": "large language model|\\bllms?\\b|\\bgpt"
+    },
+    {
+      "question": "Explainable heart disease prediction",
+      "pattern": "heart|cardi|coronary"
+    },
+    {
+      "question": "Interpretable kidney disease prediction",
+      "pattern": "kidney|renal|\\bckd\\b"
+    },
+    {
+      "question": "Explainable liver disease diagnosis",
+      "pattern": "liver|hepat"
+    },
+    {
+      "question": "Interpretable brain tumour detection from MRI",
+      "pattern": "brain tumou?r|glioma|meningioma|glioblastoma"
+    },
+    {
+      "question": "Uncertainty estimation combined with explanations in medical AI",
+      "pattern": "uncertaint"
+    }
+  ],
+  "off_topic": [
+    "What is the best pizza in London?",
+    "How do rockets work?",
+    "Who won the football World Cup?",
+    "How do I bake sourdough bread?",
+    "What is the capital of Australia?",
+    "How do I fix a flat bicycle tyre?",
+    "What are good stocks to invest in?",
+    "How does a car engine work?",
+    "Recommend a good fantasy novel",
+    "How do I learn to play the guitar?"
+  ]
+}

@@ -32,6 +32,8 @@ cited answer in three sections: Current Approaches, Limitations, and Suggested F
 | `config.py` | Shared settings, prompt, sidebar questions, database, retrieval, safeguards |
 | `precompute_answers.py` | Generates the instant sidebar answers |
 | `calibrate.py` | Tunes the off-topic cut-off for your data |
+| `evaluate.py` | Scores retrieval and answer faithfulness; saves results to `eval/` |
+| `eval/eval_set.json` | 58 test questions: 28 specific-paper, 20 topic, 10 off-topic |
 | `embed_corpus.py` | Rebuilds the database by hand (only needed after pulling new papers) |
 | `pull_papers.py` | Collects papers from Semantic Scholar |
 | `corpus_raw.json` | The collected papers |
@@ -46,6 +48,18 @@ python calibrate.py                     (first run also builds chroma_db/)
 python precompute_answers.py
 streamlit run app.py
 ```
+
+## Evaluation
+```
+python evaluate.py --label baseline            (retrieval tests, no API key needed)
+python evaluate.py --label baseline --judge    (also checks answer claims with Gemini)
+```
+- **Known-item retrieval:** 28 questions, each written about one specific paper. Hit@1/3/10 and MRR measure how highly that paper is ranked.
+- **Topic precision@10:** 20 broad questions; share of the top 10 papers that are on-topic (keyword-based labels).
+- **Off-topic handling:** share of off-topic questions refused, and of genuine questions wrongly refused.
+- **Faithfulness:** every cited claim in the saved answers is checked by an LLM judge against the abstract it cites.
+
+All runs are compared side by side in [`eval/RESULTS.md`](eval/RESULTS.md).
 
 ## Updating the papers
 ```

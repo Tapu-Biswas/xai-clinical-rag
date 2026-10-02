@@ -1,0 +1,99 @@
+{
+  "label": "baseline",
+  "timestamp": "2026-10-02T23:53:31",
+  "retrieval": {
+    "known_item": {
+      "questions": 28,
+      "hit@1": 0.8571428571428571,
+      "hit@3": 0.9642857142857143,
+      "hit@10": 1.0,
+      "mrr": 0.911904761904762
+    },
+    "topics": {
+      "questions": 20,
+      "precision@10": 0.8
+    },
+    "cutoff": {
+      "max_distance": 1.5,
+      "off_topic_refused": 1.0,
+      "genuine_wrongly_refused": 0.0
+    },
+    "details": {
+      "known_item_misses": [
+        {
+          "question": "Brain tumour detection on BRATS explained with three different XAI techniques",
+          "expected": "Explainable deep learning framework for brain tumor detection: Integrating LIME, Grad-CAM, and SHAP for enhanced accuracy.",
+          "rank": 5
+        }
+      ],
+      "weak_topics": [
+        {
+          "question": "How is LIME used to explain medical diagnosis models?",
+          "precision@10": 0.6
+        },
+        {
+          "question": "Interpretable models for electrocardiogram analysis",
+          "precision@10": 0.6
+        },
+        {
+          "question": "Federated learning with explainability in healthcare",
+          "precision@10": 0.5
+        },
+        {
+          "question": "Explainable liver disease diagnosis",
+          "precision@10": 0.6
+        },
+        {
+          "question": "Interpretable brain tumour detection from MRI",
+          "precision@10": 0.6
+        },
+        {
+          "question": "Uncertainty estimation combined with explanations in medical AI",
+          "precision@10": 0.1
+        }
+      ],
+      "wrongly_refused": []
+    }
+  },
+  "faithfulness": {
+    "claims_checked": 128,
+    "supported": 0.953125,
+    "partial": 0.015625,
+    "unsupported": 0.03125,
+    "claims_marked_inferred": 3,
+    "details": {
+      "unsupported_claims": [
+        {
+          "question": "What approaches are being used to explain deep learning predictions in medical imaging?",
+          "claim": "**To address the limitation that current visual explanations are insufficient and lack human-like depth [3]:** Future work should develop natural language generation components coupled with visual attributions to produce comprehensive, human professor-like explanations that mirror expert clinical reasoning.",
+          "cites": [
+            3
+          ]
+        },
+        {
+          "question": "What approaches are being used to explain deep learning predictions in medical imaging?",
+          "claim": "**To address the shortage of ground truth data for explainability [3]:** Research is needed to construct benchmark medical imaging datasets annotated explicitly with expert-validated explanatory rationales (such as localized clinical reasoning ground truths) to train and quantitatively evaluate XAI models.",
+          "cites": [
+            3
+          ]
+        },
+        {
+          "question": "What approaches are being used to explain deep learning predictions in medical imaging?",
+          "claim": "**To address the trade-off between interpretability and predictive accuracy [7]:** Future studies should explore novel architecture designs—such as advanced disentangled representations [9] or synergistic hybrid ensembling—that simultaneously optimize high diagnostic accuracy without compromising transparent decision-making.",
+          "cites": [
+            7,
+            9
+          ]
+        },
+        {
+          "question": "What approaches are being used to explain deep learning predictions in medical imaging?",
+          "claim": "**To address imaging variability, limited generalizability, and lack of prospective validation [3, 8]:** Researchers should implement rigorous, reproducible multi-center validation protocols and prospective clinical trials to evaluate the stability, fidelity, and safety of XAI frameworks across diverse clinical environments.",
+          "cites": [
+            3,
+            8
+          ]
+        }
+      ]
+    }
+  }
+}
