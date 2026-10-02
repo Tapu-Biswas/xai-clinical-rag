@@ -1,0 +1,855 @@
+{
+  "fingerprint": "577d621afd123e90",
+  "model": "gemini-3.5-flash-lite",
+  "corpus_size": 1071,
+  "answers": {
+    "what are the current limitations of explainable ai methods in clinical diagnosis?": {
+      "question": "What are the current limitations of explainable AI methods in clinical diagnosis?",
+      "answer": "## Current Approaches\nThe excerpts describe several current approaches for explainable AI (XAI) in clinical diagnosis:\n* **Model-Agnostic and Feature-Level Methods:** Techniques such as SHAP (SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) are widely used for structured data, electronic health records, and quantifying feature importance [4][7][8]. \n* **Model-Specific and Visual Explanation Methods:** Deep learning models in medical imaging predominantly utilize visualization models and attention mechanisms, such as Gradient-weighted Class Activation Mapping (Grad-CAM) and Layer-wise Relevance Propagation (LRP), to produce heat maps and spatial interpretations of scans like MRI, CT, and X-rays [1][4][5][6].\n* **Hybrid and Multi-Modal Frameworks:** Recent approaches integrate multiple data modalities and explanation structures, such as combining clinical features (e.g., MMSE scores, patient age) with neuroimaging data, and merging model-agnostic (SHAP) and model-specific (Grad-CAM) techniques into a unified diagnostic framework [2][6].\n* **User-Centered and Survey-Based Evaluations:** Evaluations are increasingly incorporating medical experts, general practitioners, and clinicians through surveys, interviews, and user studies to assess trust, clinical relevance, and the comprehensibility of AI outputs [2][9][10].\n\n## Limitations\nThe excerpts explicitly state the following limitations and weaknesses:\n* **Focus on Accuracy over Explanation Authenticity:** Current research heavily emphasizes enhancing deep learning performance accuracies, paying less attention to the authenticity, usefulness, and explanation fidelity of the explanations provided [1][5].\n* **Data Scarcity:** There is a shortage of ground truth data specifically needed for explainability [1].\n* **Insufficiency of Visual Explanations:** Dominant visual explanation methods may be insufficient on their own; healthcare professionals require more thorough, human professor-like explanations to build trust [1].\n* **Controlled Settings and Heterogeneity:** Thorough explanations remain heterogeneous and are largely confined to controlled settings and benchmark datasets rather than real-world hospital environments [4].\n* **Lack of Standardized Evaluation Frameworks:** There is a notable absence of standardized evaluation frameworks, uniform interpretability measures, and research evaluating explanation fidelity or real-world usability [4][5].\n* **Regulatory Non-Compliance:** Existing XAI techniques frequently fail to align with strict regulatory standards such as the EU AI Act, FDA guidelines, and HIPAA [4].\n* **Inconsistent Interpretability and Usability:** Interpretability varies inconsistently across different data modalities, and specific methods like Grad-CAM raise concerns regarding their practical clinical usability [4][10].\n* **User Awareness and Alignment Gaps:** There is a lack of awareness among medical practitioners regarding the value and practical aspects of XAI systems, and current designs frequently lack proper alignment with user needs and cognitive processes [9][10].\n* **Fragmented Explanations:** Many current XAI approaches rely solely on presenting explanations of either clinical data or MRI separately in unclear ways, reducing their overall clinical utility [6].\n* *(Inferred limitation)* While some user studies evaluate XAI, the participant sample sizes in published evaluations (e.g., studies involving only five to seven medical experts) are extremely small, limiting the generalizability of reported trust and usability scores [1][2].\n\n## Suggested Future Work\nBased on the limitations stated in the excerpts, the following concrete research directions are suggested:\n* **Standardized Validation and Regulatory Alignment:** To address the lack of standardized evaluation frameworks and failure to meet regulatory benchmarks [4], future work should focus on developing universal XAI validation protocols and uniform interpretability measures that comply with frameworks like the EU AI Act, FDA guidelines, and HIPAA.\n* **Longitudinal Real-World Clinical Integration:** To overcome the restriction of XAI being confined to controlled settings [4] and the lack of real-world usability studies [5], researchers should conduct longitudinal clinical trials to evaluate explanation fidelity and user trust directly inside active hospital workflows.\n* **Human-Centered and Inclusive Multi-Modal Design:** Addressing the need for more thorough, human-like explanations [1] and inconsistent multi-modal interpretability [4], future research should implement inclusive, participatory design approaches [5][10] that engage diverse healthcare professionals early in the design process [9] to build multi-modal frameworks combining quantitative and spatial data seamlessly [6].\n* **Enhancing Explanation Fidelity and User Awareness:** To tackle the disparity where high performance is prioritized over explanation authenticity [1] and practitioner awareness is low [10], future studies should prioritize optimizing the fidelity of explanation algorithms and creating educational frameworks to help medical practitioners understand the practical utility of XAI tools.",
+      "sources": [
+        {
+          "title": "Explainable AI in Diagnostic Radiology for Neurological Disorders: A Systematic Review, and What Doctors Think About It",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Yasir Hafeez, Khuhed Memon, M. al-Quraishi, Norashikin Yahya, Sami Elferik, Syed Saad Azhar Ali",
+          "citationCount": 35,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/2/168/pdf?version=1736781412",
+          "relevance": 0.725
+        },
+        {
+          "title": "A Feature-Augmented Explainable Artificial Intelligence Model for Diagnosing Alzheimer’s Disease from Multimodal Clinical and Neuroimaging Data",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Fatima Hasan Al-bakri, W. Bejuri, Mohammed Nasser Al-Andoli, R. Ikram, H. Khor, Yus Sholva, Umi Kalsom Md Ariffin, N. M. Yaacob, Z. Abas, Z. Abidin, S. A. Asmai, Asmala Ahmad, Ahmad Fadzli Nizam Abdul Rahman, H. Rahmalan, M. F. Abd Samad",
+          "citationCount": 8,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/16/2060/pdf?version=1755571205",
+          "relevance": 0.72
+        },
+        {
+          "title": "Applications of Explainable Artificial Intelligence in Diagnosis and Surgery",
+          "venue": "Diagnostics",
+          "year": 2022,
+          "quartile": "Q2",
+          "authors": "Yiming Zhang, Ying Weng, J. Lund",
+          "citationCount": 283,
+          "openAccessPdf": "https://doi.org/10.3390/diagnostics12020237",
+          "relevance": 0.707
+        },
+        {
+          "title": "Explainable AI Applications in Healthcare: A Systematic Review",
+          "venue": "Algorithms",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Ojobo Agbo Eje, Sayed Mehedi Azim, Iman Dehzangi",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/1999-4893/19/6/488/pdf?version=1781706992",
+          "relevance": 0.681
+        },
+        {
+          "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of Methods, Applications, and Usability Challenges",
+          "venue": "Healthcare",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Qaiser Abbas, Woonyoung Jeong, S. Lee",
+          "citationCount": 243,
+          "openAccessPdf": "",
+          "relevance": 0.668
+        },
+        {
+          "title": "A Hybrid Explainable AI Framework (HXAI) for Accurate and Interpretable Diagnosis of Alzheimer’s Disease",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Fatima Hasan Al-bakri, W. Bejuri, Mohammed Nasser Al-Andoli, Raja Rina Raja Ikram, H. Khor, M. S. Mispan, N. M. Yunos, N. Yusof, M. Fauadi, Abdul Syukor Mohamad Jaya, N. A. Moketar, Noorrezam Yusop, Kharismi Burhanudin, Tyanita Puti Marindah, Anugrayani Bustamin, Zahir Zainuddin, Deasy Wahyuni, Umi Kalsom Md Ariffin",
+          "citationCount": 4,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/24/3118/pdf",
+          "relevance": 0.655
+        },
+        {
+          "title": "Explainable AI toward understanding the performance of the top three TADPOLE Challenge methods in the forecast of Alzheimer’s disease diagnosis",
+          "venue": "PLoS ONE",
+          "year": 2022,
+          "quartile": "Q1",
+          "authors": "Monica Hernandez, Ubaldo Ramon-Julvez, Francisco Ferraz",
+          "citationCount": 39,
+          "openAccessPdf": "https://doi.org/10.1371/journal.pone.0264695",
+          "relevance": 0.654
+        },
+        {
+          "title": "A Reproducible Protocol for Developing and Evaluating Explainable Artificial Intelligence Frameworks in Healthcare Analytics.",
+          "venue": "Journal of Visualized Experiments",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Yashwant Dongre, Deepali A. Godse, Prawit Chumchu, Trupti G. Ghongade, Mohammad Israr",
+          "citationCount": 0,
+          "openAccessPdf": "",
+          "relevance": 0.647
+        },
+        {
+          "title": "User-Centered Methods in Explainable AI Development for Hospital Clinical Decision Support: A Scoping Review.",
+          "venue": "Studies in Health Technology and Informatics",
+          "year": 2025,
+          "quartile": "Q3",
+          "authors": "B. V. Van Dort, Thomas Engelsma, S. Medlock, L. Dusseljee-Peute",
+          "citationCount": 3,
+          "openAccessPdf": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250228",
+          "relevance": 0.646
+        },
+        {
+          "title": "Evaluating Explainable Artificial Intelligence (XAI) techniques in chest radiology imaging through a human-centered Lens",
+          "venue": "PLoS ONE",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Izegbua E. Ihongbe, Shereen Fouad, Taha Mahmoud, A. Rajasekaran, Bahadar Bhatia",
+          "citationCount": 71,
+          "openAccessPdf": "https://doi.org/10.1371/journal.pone.0308758",
+          "relevance": 0.641
+        }
+      ]
+    },
+    "what approaches are being used to explain deep learning predictions in medical imaging?": {
+      "question": "What approaches are being used to explain deep learning predictions in medical imaging?",
+      "answer": "## Current Approaches\nTo explain deep learning predictions in medical imaging, the excerpts describe several methods and approaches:\n* **Visual Attribution and Activation Mapping:** Techniques such as Gradient-weighted Class Activation Mapping (Grad-CAM) and general saliency maps are used to highlight specific neural regions, tumor focus areas, or image segments that influence model predictions [1, 2, 7, 10]. \n* **Pertubation-Based Interpretability:** Methods like Local Interpretable Model-agnostic Explanations (LIME) are utilized to help visualize and explain datasets, models, and predictions [7, 10].\n* **Deep Transfer Learning and Ensembles:** Combining pre-trained convolutional neural networks (CNNs)—such as VGG16, VGG19, ResNet50, DenseNet, MobileNet, and EfficientNet—with Vision Transformers (ViT) into ensemble architectures to boost performance while incorporating explainable AI techniques [1, 2, 7].\n* **Feature Disentanglement Networks:** Representation Group-Disentangling Networks (RGD-Net) utilize auto-encoders and adversarial constraints to split input feature spaces into independent, semantically consistent feature groups where each group attributes to a specific disease diagnosis [9].\n* **Multimodal and Textual Explanations:** Combining deep learning MRI segmentation models and visual attribution algorithms with natural language explanations to enhance interpretability [5].\n\n## Limitations\nThe excerpts state the following limitations and weaknesses:\n* Deep learning models frequently act as \"black boxes\" with data and algorithmic opacity, providing little insight into their decision-making process, which hinders their clinical adoption, trust, and acceptance [1, 2, 3, 5, 7].\n* Many approaches that attempt to solve model opacity achieve interpretability at the cost of sacrificing predictive accuracy [7] (inferred: creating a trade-off between the two metrics).\n* Current computer-aided diagnosis (CAD) research focuses predominantly on enhancing performance accuracy while paying less attention to the authenticity and usefulness of the explanations provided [3].\n* There is a shortage of ground truth data available specifically for explainability [3].\n* Current visual explanation methods might not be sufficient; more thorough, human-like explanations are required to fully build healthcare professionals' trust [3].\n* Broader challenges in medical imaging AI include imaging variability, limited generalizability, confounding, reproducibility issues, lack of prospective validation, and legal, ethical, safety, and security concerns [3, 8].\n\n## Suggested Future Work\nBased on the limitations stated in the excerpts, the following concrete research directions are suggested:\n* **To address the limitation that current visual explanations are insufficient and lack human-like depth [3]:** Future work should develop natural language generation components coupled with visual attributions to produce comprehensive, human professor-like explanations that mirror expert clinical reasoning.\n* **To address the shortage of ground truth data for explainability [3]:** Research is needed to construct benchmark medical imaging datasets annotated explicitly with expert-validated explanatory rationales (such as localized clinical reasoning ground truths) to train and quantitatively evaluate XAI models.\n* **To address the trade-off between interpretability and predictive accuracy [7]:** Future studies should explore novel architecture designs—such as advanced disentangled representations [9] or synergistic hybrid ensembling—that simultaneously optimize high diagnostic accuracy without compromising transparent decision-making.\n* **To address imaging variability, limited generalizability, and lack of prospective validation [3, 8]:** Researchers should implement rigorous, reproducible multi-center validation protocols and prospective clinical trials to evaluate the stability, fidelity, and safety of XAI frameworks across diverse clinical environments.",
+      "sources": [
+        {
+          "title": "An Explainable AI Paradigm for Alzheimer’s Diagnosis Using Deep Transfer Learning",
+          "venue": "Diagnostics",
+          "year": 2024,
+          "quartile": "Q2",
+          "authors": "Tanjim Mahmud, Koushick Barua, Sultana Umme Habiba, Nahed Sharmen, Mohammad Shahadat Hossain, Karl Andersson",
+          "citationCount": 131,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/14/3/345/pdf?version=1707136731",
+          "relevance": 0.679
+        },
+        {
+          "title": "Enhancing brain tumor detection in MRI images through explainable AI using Grad-CAM with Resnet 50",
+          "venue": "BMC Medical Imaging",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "M. M, Mahesh T. R., V. V, Suresh Guluwadi",
+          "citationCount": 187,
+          "openAccessPdf": "https://doi.org/10.1186/s12880-024-01292-7",
+          "relevance": 0.678
+        },
+        {
+          "title": "Explainable AI in Diagnostic Radiology for Neurological Disorders: A Systematic Review, and What Doctors Think About It",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Yasir Hafeez, Khuhed Memon, M. al-Quraishi, Norashikin Yahya, Sami Elferik, Syed Saad Azhar Ali",
+          "citationCount": 35,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/2/168/pdf?version=1736781412",
+          "relevance": 0.666
+        },
+        {
+          "title": "Deep Learning in Breast Cancer Imaging: State of the Art and Recent Advancements in Early 2024",
+          "venue": "Diagnostics",
+          "year": 2024,
+          "quartile": "Q2",
+          "authors": "Alessandro Carriero, Léon Groenhoff, Elizaveta Vologina, Paola Basile, M. Albera",
+          "citationCount": 154,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/14/8/848/pdf?version=1713529990",
+          "relevance": 0.663
+        },
+        {
+          "title": "Explainable AI for Transparent MRI Segmentation: Deep Learning and Visual Attribution in Clinical Decision Support",
+          "venue": "International Journal of Computational and Experimental Science and Engineering",
+          "year": 2024,
+          "quartile": "Q3",
+          "authors": "V. M, Jayapradha V, A. K., Gowrisankar Kalakoti, E. Nithila",
+          "citationCount": 14,
+          "openAccessPdf": "https://doi.org/10.22399/ijcesen.479",
+          "relevance": 0.656
+        },
+        {
+          "title": "Applying Deep Learning Model to Predict Diagnosis Code of Medical Records",
+          "venue": "Diagnostics",
+          "year": 2023,
+          "quartile": "Q2",
+          "authors": "J. H. B. Masud, Chen-Cheng Kuo, C. Yeh, Hsuan-Chia Yang, Ming-Chin Lin",
+          "citationCount": 30,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/13/13/2297/pdf?version=1688639589",
+          "relevance": 0.655
+        },
+        {
+          "title": "Explainable MRI-Based Ensemble Learnable Architecture for Alzheimer's Disease Detection",
+          "venue": "Algorithms",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "O. Adeniran, Blessing Ojeme, T. Ajibola, Ojonugwa Oluwafemi Ejiga Peter, A. Ajala, M. Rahman, F. Khalifa",
+          "citationCount": 17,
+          "openAccessPdf": "https://doi.org/10.3390/a18030163",
+          "relevance": 0.646
+        },
+        {
+          "title": "Beyond the field of view: Radiomics and artificial intelligence for organ-specific and systemic disease prediction from localized medical imaging.",
+          "venue": "Artificial Intelligence in Medicine",
+          "year": 2026,
+          "quartile": "Q1",
+          "authors": "Lixia Wang, Yu Shi, Zengtian Deng, Yu-Feng Wang, Dante Rigo De Righi, Sehrish Javed, T. Qureshi, Ju-Dong Yang, Yi-Bin Xie, S. Pandol, De-Biao Li",
+          "citationCount": 0,
+          "openAccessPdf": "https://doi.org/10.1016/j.artmed.2026.103535",
+          "relevance": 0.645
+        },
+        {
+          "title": "Interpretable Thoracic Pathologic Prediction via Learning Group-Disentangled Representation.",
+          "venue": "Methods",
+          "year": 2023,
+          "quartile": "Q2",
+          "authors": "Hao Li, Yirui Wu, He-Xuan Hu, Hu Lu, Qian Huang, Shaohua Wan",
+          "citationCount": 2,
+          "openAccessPdf": "",
+          "relevance": 0.639
+        },
+        {
+          "title": "A Reproducible Protocol for Developing and Evaluating Explainable Artificial Intelligence Frameworks in Healthcare Analytics.",
+          "venue": "Journal of Visualized Experiments",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Yashwant Dongre, Deepali A. Godse, Prawit Chumchu, Trupti G. Ghongade, Mohammad Israr",
+          "citationCount": 0,
+          "openAccessPdf": "",
+          "relevance": 0.637
+        }
+      ]
+    },
+    "how is shap being applied in clinical diagnosis research?": {
+      "question": "How is SHAP being applied in clinical diagnosis research?",
+      "answer": "## Current Approaches\nBased on the provided excerpts, SHAP (SHapley Additive exPlanations) is widely applied across various clinical diagnosis and disease prediction contexts to enhance the interpretability of machine learning models. The current methodological approaches include:\n\n* **Integration with Diverse Machine Learning Classifiers:** SHAP is coupled with various algorithms—such as Support Vector Machines (SVM), Random Forests (RF), eXtreme Gradient Boosting (XGBoost), LightGBM, and GentleBoost—to explain predictions for conditions like post-thyroidectomy voice disorders [1], general disease diagnoses (diabetes, cardiovascular, statlog, and thyroid diseases) [2], lung cancer [3], Alzheimer's disease [5], Class III malocclusions [6], adult ADHD [7], fever of unknown origin (FUO) via mNGS positivity prediction [8], anemia differentiation [9], and coronary artery disease with type 2 diabetes [10].\n* **Feature Selection and Identification of Biomarkers:** SHAP is used alongside other feature selection or dimensional reduction methods (such as Boruta, RFE, and Lasso regression) to isolate optimal subsets of clinical features, acoustic biomarkers (e.g., iCPP, aCPP, aHNR) [1], cephalometric variables [6], blood attributes [9], and risk factors [10].\n* **Quantitative Evaluation of Faithfulness:** In digital pathology, SHAP (via DeepExplainer) is evaluated alongside other XAI methods (LIME, GradCAM, GradCAM++) to measure explanation faithfulness (using metrics like AOPC and insertion/deletion AUC) for detecting lymph node metastases [4].\n* **Triangulation and Clinical Insight Generation:** SHAP outputs—such as summary plots, feature importance rankings, and interaction patterns—are used to quantify feature impacts by direction and magnitude [5], uncover symptom interactions (e.g., how depression severity amplifies ADHD predictors) [7], and validate findings against traditional exploratory data analysis (EDA) like correlation matrices and t-tests [7].\n\n## Limitations\nThe excerpts state the following limitations and challenges:\n* Machine learning systems in clinical applications often lack transparency and remain opaque to clinicians, which limits their clinical adoption and regulatory acceptance [3, 4, 7].\n* Disease datasets frequently suffer from class imbalance issues (such as in Alzheimer’s disease progression states or CHD-DM2 data), which hinder auxiliary diagnostic performance if not handled at the algorithmic level [3, 5, 10].\n* Relying purely on subjective clinical judgment leads to common over- and under-diagnosis, such as in adult ADHD [7].\n* (Inferred) Most studies rely on retrospective, single-institution, or specific benchmark datasets (such as Kaggle, ADNI, or single hospital cohorts), meaning broader generalizability across diverse clinical sites remains unproven.\n* (Inferred) While SHAP provides high faithfulness in digital pathology, other methods like GradCAM++ achieve higher spatial agreement with expert pathologist annotations, indicating that individual XAI techniques have trade-offs between faithfulness and spatial/clinical coherence [4].\n\n## Suggested Future Work\nBased on the limitations above, the following concrete research directions are suggested:\n* **Multi-Site External Validation:** Conduct prospective, multi-site external validation studies and reader evaluations (addressing the reliance on single-institution or retrospective datasets and supporting regulatory frameworks like the FDA SaMD Action Plan) [4, 7].\n* **Temporal and Longitudinal Stability Analysis:** Perform temporal analyses to assess how stability, predictive power, and feature influences evolve over time, particularly for chronic or progressive conditions like ADHD [7].\n* **Optimization of Hybrid XAI Frameworks:** Implement tiered or hybrid deployment strategies (integrating tools like SHAP for research faithfulness alongside methods like GradCAM++ or LIME for spatial/clinical communication) to maximize both model transparency and alignment with expert clinician annotations [4].",
+      "sources": [
+        {
+          "title": "SHAP-Based Identification of Potential Acoustic Biomarkers in Patients with Post-Thyroidectomy Voice Disorder",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "S. Celepli, İrem Bigat, Bilgi Karakaş, Huseyin Mert Tezcan, Mehmet Dinçay Yar, P. Celepli, M. Akşahin, O. Hançerlioğulları, Yavuz Yılmaz, Osman Eroğul",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/16/2065/pdf?version=1755517935",
+          "relevance": 0.529
+        },
+        {
+          "title": "Comparative performance analysis of Boruta, SHAP, and Borutashap for disease diagnosis: A study with multiple machine learning algorithms",
+          "venue": "Network",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "C. Ejiyi, Zhen Qin, C. Ukwuoma, G. U. Nneji, H. Monday, M. B. Ejiyi, Thomas Ugochukwu Ejiyi, U. Okechukwu, Olusola O. Bamisile",
+          "citationCount": 46,
+          "openAccessPdf": "",
+          "relevance": 0.521
+        },
+        {
+          "title": "XML-GBM lung: An explainable machine learning-based application for the diagnosis of lung cancer.",
+          "venue": "Journal of Pathology Informatics",
+          "year": 2023,
+          "quartile": "Q1",
+          "authors": "S. T. Rikta, K. M. Uddin, Nitish Biswas, Rafid Mostafiz, Fateha Sharmin, Samrat Kumar Dey",
+          "citationCount": 36,
+          "openAccessPdf": "https://doi.org/10.1016/j.jpi.2023.100307",
+          "relevance": 0.497
+        },
+        {
+          "title": "Explainability Methods for AI-Assisted Diagnosis of Lymph Node Metastases in Digital Pathology: A Quantitative Comparative Study",
+          "venue": "Diagnostics",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Eduardo Costa da Silva",
+          "citationCount": 0,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/16/12/1880/pdf?version=1781670647",
+          "relevance": 0.481
+        },
+        {
+          "title": "XGBoost-SHAP-based interpretable diagnostic framework for alzheimer’s disease",
+          "venue": "BMC Medical Informatics and Decision Making",
+          "year": 2023,
+          "quartile": "Q1",
+          "authors": "Fu-Liang Yi, Huiwen Yang, Du-Rong Chen, Yao Qin, Hongjuan Han, Jing Cui, Wenlin Bai, Yifei Ma, Rong Zhang, Hong-Mei Yu",
+          "citationCount": 160,
+          "openAccessPdf": "https://bmcmedinformdecismak.biomedcentral.com/counter/pdf/10.1186/s12911-023-02238-9",
+          "relevance": 0.478
+        },
+        {
+          "title": "Machine Learning Algorithms for the Diagnosis of Class III Malocclusions in Children",
+          "venue": "Children",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Ling Zhao, Xiaozhi Chen, Juneng Huang, Shui-Xue Mo, Min Gu, Na Kang, Shao-Hua Song, Xue-Jun Zhang, Bohui Liang, Min Tang",
+          "citationCount": 7,
+          "openAccessPdf": "https://doi.org/10.3390/children11070762",
+          "relevance": 0.453
+        },
+        {
+          "title": "Integrating explainable AI with clinical features to enhance ADHD diagnostic understanding",
+          "venue": "Frontiers in Psychiatry",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "H. M. Shakeel, Grigorios Antoniou, M. Adamou",
+          "citationCount": 3,
+          "openAccessPdf": "https://public-pages-files-2025.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1706216/pdf",
+          "relevance": 0.447
+        },
+        {
+          "title": "Enhancing fever of unknown origin diagnosis: machine learning approaches to predict metagenomic next-generation sequencing positivity",
+          "venue": "Frontiers in Cellular and Infection Microbiology",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "Zhi Gao, Yong-Fang Jiang, Mengxuan Chen, Weihang Wang, Qiyao Liu, Jing Ma",
+          "citationCount": 7,
+          "openAccessPdf": "https://www.frontiersin.org/journals/cellular-and-infection-microbiology/articles/10.3389/fcimb.2025.1550933/pdf",
+          "relevance": 0.446
+        },
+        {
+          "title": "Differential diagnosis of iron deficiency anemia from aplastic anemia using machine learning and explainable Artificial Intelligence utilizing blood attributes",
+          "venue": "Scientific Reports",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "B. S. Dhruva Darshan, N. Sampathila, G. M. Bairy, S. Prabhu, S. Belurkar, K. Chadaga, S. Nandish",
+          "citationCount": 28,
+          "openAccessPdf": "https://www.nature.com/articles/s41598-024-84120-w.pdf",
+          "relevance": 0.441
+        },
+        {
+          "title": "Exploration and analysis of risk factors for coronary artery disease with type 2 diabetes based on SHAP explainable machine learning algorithm",
+          "venue": "Scientific Reports",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "Dandan Tang, Fengwei Liang, Xingli Gu, Yuanyuan Jin, Xuanjie Hu, Fen Liu, Yining Yang",
+          "citationCount": 8,
+          "openAccessPdf": "https://www.nature.com/articles/s41598-025-11142-3.pdf",
+          "relevance": 0.438
+        }
+      ]
+    },
+    "what are the main criticisms of grad-cam in medical applications?": {
+      "question": "What are the main criticisms of Grad-CAM in medical applications?",
+      "answer": "## Current Approaches\nBased on the provided excerpts, Grad-CAM (Gradient-weighted Class Activation Mapping) is predominantly used as a visual explainability method for deep learning models in medical imaging applications, such as chest radiography [2], pneumonia diagnosis [4], COVID-19 lesion localization in CT scans [6], oral disease classification [8], and general clinical decision support systems [9]. It generates visual heatmaps or explanations to elucidate AI decision-making processes and assist clinicians with interpretation [2, 4, 8]. Often, studies compare Grad-CAM with alternative XAI techniques—such as LIME, SHAP, Grad-CAM++, LayerCAM, ScoreCAM, and pixel-level interpretability—across various neural network architectures like CNNs, DenseNet, and VGG19 [1, 2, 4, 6, 7].\n\n## Limitations\nThe excerpts explicitly state several limitations regarding Grad-CAM and related visual XAI methods in medical applications:\n* **Clinical Usability and Trust Concerns:** Despite positive perceptions of XAI systems in terms of coherency and trust, concerns have been raised regarding Grad-CAM's practical clinical usability [2].\n* **Discrepancies with Model Performance:** Grad-CAM analysis has demonstrated discrepancies between a model's top classification performance and the highest explainability output (i.e., a disconnect between what makes a model perform best and where Grad-CAM highlights attention) [8].\n* **Technical Deficiencies (Single-Layer Limitations):** Popular visual explanation methods like Grad-CAM rely on a single convolutional layer, which can potentially miss multi-scale cues and produce unstable saliency maps [7] (inferred: this limits its robustness in complex medical imaging tasks).\n* **Lack of Standardized and Real-World Validation:** Across the broader XAI landscape in healthcare, explanations remain heterogeneous, restricted to controlled benchmark settings [3], and lack real-world usability evaluations, clinician trust assessments in practice, and longitudinal clinical validation [9].\n\n## Suggested Future Work\nBased on the limitations stated in the excerpts, the following concrete research directions are suggested:\n* **Multi-Layer and Multi-Scale Aggregation:** To address the limitation that Grad-CAM relies on a single convolutional layer and misses multi-scale cues [7], future work should develop and evaluate multi-layer aggregation techniques (similar to Winsor-CAM [7]) across diverse medical imaging modalities.\n* **Real-World and Longitudinal Clinical Validation:** To address the gap that current XAI evaluations are confined to controlled settings and lack real-world usability or longitudinal validation [3][9], future research should conduct prospective, multi-site clinical trials and longitudinal studies measuring actual clinician trust and workflow integration.\n* **Discrepancy Resolution between Classification and Explainability:** To follow up on the observed discrepancies between high-performing models and high-explainability outputs [8], studies should investigate loss functions or training regularizations that jointly optimize classification accuracy and spatial localization faithfulness.",
+      "sources": [
+        {
+          "title": "Explainability Methods for AI-Assisted Diagnosis of Lymph Node Metastases in Digital Pathology: A Quantitative Comparative Study",
+          "venue": "Diagnostics",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Eduardo Costa da Silva",
+          "citationCount": 0,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/16/12/1880/pdf?version=1781670647",
+          "relevance": 0.418
+        },
+        {
+          "title": "Evaluating Explainable Artificial Intelligence (XAI) techniques in chest radiology imaging through a human-centered Lens",
+          "venue": "PLoS ONE",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Izegbua E. Ihongbe, Shereen Fouad, Taha Mahmoud, A. Rajasekaran, Bahadar Bhatia",
+          "citationCount": 71,
+          "openAccessPdf": "https://doi.org/10.1371/journal.pone.0308758",
+          "relevance": 0.398
+        },
+        {
+          "title": "Explainable AI Applications in Healthcare: A Systematic Review",
+          "venue": "Algorithms",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Ojobo Agbo Eje, Sayed Mehedi Azim, Iman Dehzangi",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/1999-4893/19/6/488/pdf?version=1781706992",
+          "relevance": 0.38
+        },
+        {
+          "title": "Enhancing Pneumonia Diagnosis Through AI Interpretability: Comparative Analysis of Pixel-Level Interpretability and Grad-CAM on X-ray Imaging With VGG19",
+          "venue": "IEEE Open Journal of the Computer Society",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "M. Ennab, Hamid Mcheick",
+          "citationCount": 5,
+          "openAccessPdf": "https://doi.org/10.1109/ojcs.2025.3582726",
+          "relevance": 0.375
+        },
+        {
+          "title": "Knowledge Distillation and Explainability Analysis for Lightweight Retinal Disease Classification Using MultiEYE Fundus Images",
+          "venue": "Diagnostics",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "G. Türker, Arif Koyun",
+          "citationCount": 0,
+          "openAccessPdf": "https://doi.org/10.3390/diagnostics16182945",
+          "relevance": 0.365
+        },
+        {
+          "title": "COVLIAS 2.0-cXAI: Cloud-Based Explainable Deep Learning System for COVID-19 Lesion Localization in Computed Tomography Scans",
+          "venue": "Diagnostics",
+          "year": 2022,
+          "quartile": "Q2",
+          "authors": "J. Suri, Sushant Agarwal, G. Chabert, A. Carriero, Alessio Pasché, P. Danna, L. Saba, Armin Mehmedović, G. Faa, Inder M. Singh, M. Turk, Paramjit S. Chadha, A. Johri, N. Khanna, S. Mavrogeni, John R. Laird, G. Pareek, Martin Miner, David W. Sobel, A. Balestrieri, P. Sfikakis, G. Tsoulfas, A. Protogerou, D. Misra, V. Agarwal, G. Kitas, J. Teji, Mustafa Al-Maini, S. Dhanjil, A. Nicolaides, Aditya M. Sharma, V. Rathore, M. Fatemi, A. Alizad, P. R. Krishnan, F. Nagy, Zoltán Ruzsa, Mostafa M. Fouda, S. Naidu, K. Višković, M. Kalra",
+          "citationCount": 49,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/12/6/1482/pdf?version=1655656847",
+          "relevance": 0.364
+        },
+        {
+          "title": "Winsor-CAM: Human-Tunable Visual Explanations From Deep Networks via Layer-Wise Winsorization",
+          "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "Casey Wall, Longwei Wang, Rodrigue Rizk, K. Santosh",
+          "citationCount": 17,
+          "openAccessPdf": "",
+          "relevance": 0.36
+        },
+        {
+          "title": "Automated classification of oral potentially malignant disorders and oral squamous cell carcinoma using a convolutional neural network framework: a cross-sectional study",
+          "venue": "The Lancet Regional Health - Americas",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "C. Saldivia-Siracusa, Eduardo Santos Carlos de Souza, A. V. Barros da Silva, Anna Luíza Damaceno Araújo, C. Pedroso, Tarcília Aparecida da Silva, Maria Sissa Pereira Sant'Ana, Felipe Paiva Fonseca, H. A. Rebelo Pontes, Marcos G. Quiles, M. A. Lopes, P. Vargas, S. A. Khurram, A. Pearson, M. Lingen, L. P. Kowalski, K. Hunter, André Carlos Ponce de Leon Ferreira de Carvalho, A. Santos-Silva",
+          "citationCount": 23,
+          "openAccessPdf": "https://www.thelancet.com/action/showPdf?pii=S2667193X25001486",
+          "relevance": 0.358
+        },
+        {
+          "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of Methods, Applications, and Usability Challenges",
+          "venue": "Healthcare",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Qaiser Abbas, Woonyoung Jeong, S. Lee",
+          "citationCount": 243,
+          "openAccessPdf": "",
+          "relevance": 0.357
+        },
+        {
+          "title": "A Mixed-Methods Evaluation Framework for Electronic Health Records Usability Studies",
+          "venue": "Journal of Biomedical Informatics",
+          "year": 2019,
+          "quartile": "Q1",
+          "authors": "Saif S. Khairat, C. Coleman, T. Newlin, Victoria Rand, Paige Ottmar, T. Bice, S. Carson",
+          "citationCount": 50,
+          "openAccessPdf": "https://www.sciencedirect.com/science/article/pii/S1532046419300930/pdf",
+          "relevance": 0.356
+        }
+      ]
+    },
+    "what gaps exist between explainable ai research and real clinical adoption?": {
+      "question": "What gaps exist between explainable AI research and real clinical adoption?",
+      "answer": "## Current Approaches\nThe excerpts describe several methods and approaches for integrating Explainable Artificial Intelligence (XAI) into healthcare:\n* **Post-hoc Interpretability and Feature Attribution Tools:** Widely used techniques such as SHAP and LIME are predominantly applied to structured tabular data (such as electronic health records) and sequential tasks [1, 2, 6, 9].\n* **Visual Explanations and Attention Mechanisms:** Gradient-weighted Class Activation Mapping (Grad-CAM), attention mechanisms, and Layer-wise Relevance Propagation (LRP) are primarily utilized in medical imaging and audio-based systems [1, 2, 6, 9]. \n* **Multimodal and Advanced Hybrid Models:** Approaches combine structured clinical data, neuroimaging, and audio features (like spectrograms) with demographic data [4, 9]. Specific implementations feature rule-based reasoning combined with example-based visualization [4], feature-augmented models [4], and large language models (LLMs) enhanced by Retrieval-Augmented Generation (RAG) to translate system-level explanations into natural language narratives [10].\n* **User-Centered and Social Science-Based Frameworks:** Studies incorporate qualitative methods such as interviews and focus groups with physicians, nurses, and developers across various design stages [3], alongside survey-based evaluations by medical experts [4] and social science-based automated metrics to score explanation usefulness in clinical contexts [8].\n* **Reproducible Protocols:** Experimental pipelines integrate data preprocessing, predictive modeling, interpretation generation, and quantitative evaluation (covering accuracy, fidelity, stability, and explanation metrics) into a unified workflow [6].\n\n## Limitations\nThe excerpts explicitly state the following limitations and barriers to clinical adoption:\n* **Controlled Settings and Lack of Real-World Evaluation:** Thorough explanations and XAI models remain largely confined to controlled settings and benchmark datasets [1]. There is a general absence of research evaluating explanation fidelity, clinician trust, or usability in real-world settings [2].\n* **Regulatory Misalignment:** Existing XAI techniques often fail to correspond with strict regulatory standards such as the EU AI Act, FDA guidelines, and HIPAA [1].\n* **Modality and Standardization Deficits:** There is inconsistent interpretability across data modalities, a lack of standardized evaluation frameworks [1], and a shortage of ground-truth data specifically for explainability [7].\n* **Superficial Explanations:** Current computer-aided diagnosis (CAD) research focuses heavily on boosting predictive performance rather than the authenticity and usefulness of explanations [7]. Visual explanations alone are often insufficient, as healthcare professionals require more thorough, human professor-like explanations [7].\n* **Methodological and Design Shortcomings:** Some development studies suffer from unclear recruitment strategies and insufficiently detailed analyses [3]. *(Inferred limitation: reliance on small expert cohorts, such as only five or seven doctors in specific evaluations [4, 7], limits generalizability).*\n* **Risk of Miscalibrated Trust:** Black-box models and poorly communicated explanations risk causing either uncritical reliance (over-trust) or unwarranted skepticism (under-trust) among practitioners [10].\n\n## Suggested Future Work\nBased on the limitations above, the following concrete research directions are proposed:\n* **Longitudinal Real-World Integration and Usability Testing:** Future studies should deploy and evaluate XAI-based clinical decision support systems (CDSS) within actual clinical workflows and longitudinal settings to measure explanation fidelity, clinician trust, and usability, addressing the gap where current evaluations remain confined to controlled environments [1][2].\n* **Regulatory Compliance Standardization:** Research must establish standardized validation frameworks and XAI techniques explicitly designed to meet strict regulatory benchmarks such as the EU AI Act, FDA guidelines, and HIPAA [1].\n* **Diversified Participatory Design and Recruitment:** Future work should engage end-users early in the design process using rigorous recruitment strategies, incorporating health professionals and nurses from diverse experiences, backgrounds, and specialties to ensure explanations align with cognitive processes [3].\n* **Advanced and Human-Aligned Explanation Methods:** Researchers should develop more thorough, human professor-like explanations—moving beyond basic visual heat maps—to better support complex clinical diagnoses and match the reasoning styles of healthcare professionals [7].\n* **Automated Usefulness Metrics and Cross-Domain Adaptation:** Future initiatives can build upon social science-based scoring methods to create scalable automated metrics for clinical explanation usefulness, and test their adaptability across a broader array of medical contexts beyond single domains like depression or sepsis [8][10].",
+      "sources": [
+        {
+          "title": "Explainable AI Applications in Healthcare: A Systematic Review",
+          "venue": "Algorithms",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Ojobo Agbo Eje, Sayed Mehedi Azim, Iman Dehzangi",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/1999-4893/19/6/488/pdf?version=1781706992",
+          "relevance": 0.643
+        },
+        {
+          "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of Methods, Applications, and Usability Challenges",
+          "venue": "Healthcare",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Qaiser Abbas, Woonyoung Jeong, S. Lee",
+          "citationCount": 243,
+          "openAccessPdf": "",
+          "relevance": 0.618
+        },
+        {
+          "title": "User-Centered Methods in Explainable AI Development for Hospital Clinical Decision Support: A Scoping Review.",
+          "venue": "Studies in Health Technology and Informatics",
+          "year": 2025,
+          "quartile": "Q3",
+          "authors": "B. V. Van Dort, Thomas Engelsma, S. Medlock, L. Dusseljee-Peute",
+          "citationCount": 3,
+          "openAccessPdf": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250228",
+          "relevance": 0.614
+        },
+        {
+          "title": "A Feature-Augmented Explainable Artificial Intelligence Model for Diagnosing Alzheimer’s Disease from Multimodal Clinical and Neuroimaging Data",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Fatima Hasan Al-bakri, W. Bejuri, Mohammed Nasser Al-Andoli, R. Ikram, H. Khor, Yus Sholva, Umi Kalsom Md Ariffin, N. M. Yaacob, Z. Abas, Z. Abidin, S. A. Asmai, Asmala Ahmad, Ahmad Fadzli Nizam Abdul Rahman, H. Rahmalan, M. F. Abd Samad",
+          "citationCount": 8,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/16/2060/pdf?version=1755571205",
+          "relevance": 0.565
+        },
+        {
+          "title": "Uncloaking the black-box: the need for explainable artificial intelligence in clinical microbiology and infectious diseases applications",
+          "venue": "Frontiers in Public Health",
+          "year": 2026,
+          "quartile": "Q1",
+          "authors": "Sreya Pulakkat Warrier, Venkatesh Narasimhan, Eline Meijer, Yukino Gütlin, O. Nolte, Balaji Veeraraghavan, A. Egli",
+          "citationCount": 3,
+          "openAccessPdf": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1776922/pdf",
+          "relevance": 0.559
+        },
+        {
+          "title": "A Reproducible Protocol for Developing and Evaluating Explainable Artificial Intelligence Frameworks in Healthcare Analytics.",
+          "venue": "Journal of Visualized Experiments",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Yashwant Dongre, Deepali A. Godse, Prawit Chumchu, Trupti G. Ghongade, Mohammad Israr",
+          "citationCount": 0,
+          "openAccessPdf": "",
+          "relevance": 0.552
+        },
+        {
+          "title": "Explainable AI in Diagnostic Radiology for Neurological Disorders: A Systematic Review, and What Doctors Think About It",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Yasir Hafeez, Khuhed Memon, M. al-Quraishi, Norashikin Yahya, Sami Elferik, Syed Saad Azhar Ali",
+          "citationCount": 35,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/2/168/pdf?version=1736781412",
+          "relevance": 0.551
+        },
+        {
+          "title": "Evaluating Explanations From AI Algorithms for Clinical Decision-Making: A Social Science-Based Approach",
+          "venue": "IEEE journal of biomedical and health informatics",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Suparna Ghanvatkar, Vaibhav Rajan",
+          "citationCount": 13,
+          "openAccessPdf": "https://doi.org/10.1101/2024.02.26.24303365",
+          "relevance": 0.532
+        },
+        {
+          "title": "Can We Trust AI With Our Ears? A Cross-Domain Comparative Analysis of Explainability in Audio Intelligence",
+          "venue": "IEEE Access",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "Sudip Chakrabarty, Pappu Bishwas, Mainak Bandyopadhyay, Jérémie Sublime",
+          "citationCount": 5,
+          "openAccessPdf": "https://doi.org/10.1109/access.2025.3622161",
+          "relevance": 0.527
+        },
+        {
+          "title": "Mind AI's Mind: A Clinically Aligned Explainable AI Pipeline for Depression Diagnosis via Large Language Models",
+          "venue": "IEEE Transactions on Affective Computing",
+          "year": 2026,
+          "quartile": "Q1",
+          "authors": "Yu-Qi Wu, Guang-Ya Wan, Rachael Dong, Iman Kassam, Brittany C Wiseman, Judith Rho, N. Graziano, Xihua Wang, Yanbo Zhang, Jie Chen",
+          "citationCount": 2,
+          "openAccessPdf": "",
+          "relevance": 0.519
+        }
+      ]
+    },
+    "what ethical concerns are raised about explainable ai in clinical decision-making?": {
+      "question": "What ethical concerns are raised about explainable AI in clinical decision-making?",
+      "answer": "## Current Approaches\nThe excerpts describe various methods and approaches to incorporate Explainable Artificial Intelligence (XAI) into clinical decision-making and healthcare. These include:\n*   **Model-Agnostic and Post-Hoc Interpretation Techniques:** Utilizing methods such as SHAP, LIME, Grad-CAM, and Layer-wise Relevance Propagation (LRP) to interpret complex models across structured data (like electronic health records) and medical imaging [2][3][6][10].\n*   **Visual and Integrated Explanation Formats:** Applying visual explanations (such as heat maps and MRI segmentation visual attributions), rule-based reasoning, and combined multi-modal interpretations (integrating clinical data and scans) to support complex diagnoses like Alzheimer's disease and neurological disorders [1, 5, 9].\n*   **User-Centered and Social Science-Based Frameworks:** Involving healthcare professionals (physicians and nurses) through interviews, focus groups, and multi-stage prototype testing, as well as applying social science theories and biomedical knowledge graphs to evaluate the practical usefulness of AI explanations [4][7].\n\n## Limitations\nThe excerpts explicitly state the following limitations and challenges regarding XAI in clinical decision-making:\n*   There is a lack of research evaluating explanation fidelity, clinician trust, or usability in real-world settings [2].\n*   Current XAI research focuses heavily on enhancing the performance accuracy of deep learning regimens while paying less attention to the authenticity and usefulness of explanations [1].\n*   There is a shortage of ground truth data for explainability [1].\n*   Visual explanation methods dominate, but they may be insufficient; thorough, human professor-like explanations are lacking [1].\n*   Explanation remains heterogeneous and largely confined to controlled settings and benchmark datasets [3].\n*   There is inconsistent interpretability across data modalities and a lack of standardized evaluation frameworks [3].\n*   Existing XAI techniques often do not align with strict regulatory standards such as the EU AI Act, FDA guidelines, and HIPAA [3].\n*   Some studies involving end-users have unclear recruitment strategies and insufficiently detailed analyses [4].\n*   There are no automated metrics to evaluate the usefulness of explanations in the clinical context [7] (though newly proposed scoring methods attempt to address this [7]).\n\n## Suggested Future Work\nBased on the stated limitations, the following concrete research directions are suggested:\n*   To address the lack of real-world usability and fidelity evaluations [2], future work should conduct longitudinal clinical validation and real-world deployment studies to measure actual clinician trust and system utility.\n*   To resolve the lack of standardized evaluation frameworks [3] and automated clinical usefulness metrics [7], researchers should develop universal interpretability measures and automated validation metrics that align with both human cognitive processes and clinical literature.\n*   To bridge the gap with strict regulatory standards (such as the EU AI Act, FDA guidelines, and HIPAA) [3], future research must explicitly design and test XAI architectures that fulfill formal regulatory compliance criteria.\n*   To overcome insufficient recruitment strategies and detail in user-centered design [4], future studies should engage diverse healthcare professionals early in the design process using rigorous qualitative methodologies and transparent recruitment reporting.",
+      "sources": [
+        {
+          "title": "Explainable AI in Diagnostic Radiology for Neurological Disorders: A Systematic Review, and What Doctors Think About It",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Yasir Hafeez, Khuhed Memon, M. al-Quraishi, Norashikin Yahya, Sami Elferik, Syed Saad Azhar Ali",
+          "citationCount": 35,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/2/168/pdf?version=1736781412",
+          "relevance": 0.728
+        },
+        {
+          "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of Methods, Applications, and Usability Challenges",
+          "venue": "Healthcare",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Qaiser Abbas, Woonyoung Jeong, S. Lee",
+          "citationCount": 243,
+          "openAccessPdf": "",
+          "relevance": 0.703
+        },
+        {
+          "title": "Explainable AI Applications in Healthcare: A Systematic Review",
+          "venue": "Algorithms",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Ojobo Agbo Eje, Sayed Mehedi Azim, Iman Dehzangi",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/1999-4893/19/6/488/pdf?version=1781706992",
+          "relevance": 0.657
+        },
+        {
+          "title": "User-Centered Methods in Explainable AI Development for Hospital Clinical Decision Support: A Scoping Review.",
+          "venue": "Studies in Health Technology and Informatics",
+          "year": 2025,
+          "quartile": "Q3",
+          "authors": "B. V. Van Dort, Thomas Engelsma, S. Medlock, L. Dusseljee-Peute",
+          "citationCount": 3,
+          "openAccessPdf": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250228",
+          "relevance": 0.65
+        },
+        {
+          "title": "A Feature-Augmented Explainable Artificial Intelligence Model for Diagnosing Alzheimer’s Disease from Multimodal Clinical and Neuroimaging Data",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Fatima Hasan Al-bakri, W. Bejuri, Mohammed Nasser Al-Andoli, R. Ikram, H. Khor, Yus Sholva, Umi Kalsom Md Ariffin, N. M. Yaacob, Z. Abas, Z. Abidin, S. A. Asmai, Asmala Ahmad, Ahmad Fadzli Nizam Abdul Rahman, H. Rahmalan, M. F. Abd Samad",
+          "citationCount": 8,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/16/2060/pdf?version=1755571205",
+          "relevance": 0.643
+        },
+        {
+          "title": "A Reproducible Protocol for Developing and Evaluating Explainable Artificial Intelligence Frameworks in Healthcare Analytics.",
+          "venue": "Journal of Visualized Experiments",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Yashwant Dongre, Deepali A. Godse, Prawit Chumchu, Trupti G. Ghongade, Mohammad Israr",
+          "citationCount": 0,
+          "openAccessPdf": "",
+          "relevance": 0.626
+        },
+        {
+          "title": "Evaluating Explanations From AI Algorithms for Clinical Decision-Making: A Social Science-Based Approach",
+          "venue": "IEEE journal of biomedical and health informatics",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Suparna Ghanvatkar, Vaibhav Rajan",
+          "citationCount": 13,
+          "openAccessPdf": "https://doi.org/10.1101/2024.02.26.24303365",
+          "relevance": 0.624
+        },
+        {
+          "title": "Applications of Explainable Artificial Intelligence in Diagnosis and Surgery",
+          "venue": "Diagnostics",
+          "year": 2022,
+          "quartile": "Q2",
+          "authors": "Yiming Zhang, Ying Weng, J. Lund",
+          "citationCount": 283,
+          "openAccessPdf": "https://doi.org/10.3390/diagnostics12020237",
+          "relevance": 0.611
+        },
+        {
+          "title": "Explainable AI for Transparent MRI Segmentation: Deep Learning and Visual Attribution in Clinical Decision Support",
+          "venue": "International Journal of Computational and Experimental Science and Engineering",
+          "year": 2024,
+          "quartile": "Q3",
+          "authors": "V. M, Jayapradha V, A. K., Gowrisankar Kalakoti, E. Nithila",
+          "citationCount": 14,
+          "openAccessPdf": "https://doi.org/10.22399/ijcesen.479",
+          "relevance": 0.608
+        },
+        {
+          "title": "Uncloaking the black-box: the need for explainable artificial intelligence in clinical microbiology and infectious diseases applications",
+          "venue": "Frontiers in Public Health",
+          "year": 2026,
+          "quartile": "Q1",
+          "authors": "Sreya Pulakkat Warrier, Venkatesh Narasimhan, Eline Meijer, Yukino Gütlin, O. Nolte, Balaji Veeraraghavan, A. Egli",
+          "citationCount": 3,
+          "openAccessPdf": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1776922/pdf",
+          "relevance": 0.584
+        }
+      ]
+    },
+    "what future research directions are suggested for explainable ai in healthcare?": {
+      "question": "What future research directions are suggested for explainable AI in healthcare?",
+      "answer": "## Current Approaches\nThe excerpts describe various methods and approaches for Explainable Artificial Intelligence (XAI) in healthcare:\n* Integrating steps like data preprocessing, predictive modeling, interpretation generation, and evaluation into unified workflows for structured clinical data and medical imaging datasets [2].\n* Utilizing model-agnostic and post-hoc interpretability tools such as SHAP, LIME, Grad-CAM, Layer-wise Relevance Propagation (LRP), and attention mechanisms [2][5][7][9].\n* Applying XAI across diverse clinical domains, including hospital clinical decision support systems (CDSS), diagnostic radiology for neurological disorders, surgical applications, audio-based medical systems, clinical microbiology, and infectious diseases [1][3][4][8][9].\n* Engaging potential end-users primarily through interviews and focus groups involving physicians, nurses, and developers across various stages of design and prototype testing [1].\n* Employing social science-based approaches and literature-derived biomedical knowledge graphs to evaluate the usefulness of AI explanations for clinicians [6].\n\n## Limitations\nThe excerpts state the following limitations and weaknesses:\n* Current research heavily focuses on enhancing the performance accuracies of deep learning regimens, paying less attention to the authenticity and usefulness of explanations [3].\n* There is a shortage of ground truth data for explainability [3].\n* Thorough explanations remain heterogeneous and largely confined to controlled settings and benchmark datasets [5].\n* There are critical barriers to clinical adoption, including inconsistent interpretability across data modalities and a lack of standardized validation and evaluation frameworks [5][7].\n* Existing XAI techniques often fail to meet strict regulatory standards such as the EU AI Act, FDA guidelines, and HIPAA [5].\n* There is a scarcity of research evaluating explanation fidelity, clinician trust, or usability in real-world settings [7].\n* Some development and design studies suffer from unclear recruitment strategies and insufficiently detailed analyses [1].\n* There are no automated metrics to evaluate the usefulness of explanations specifically in the clinical context (inferred) [6].\n\n## Suggested Future Work\nBased on the limitations stated in the excerpts, the following concrete research directions are suggested:\n* **Early and diverse user engagement in design:** Engage end-users early in the design process and include health professionals with diverse experiences and backgrounds [1]. This addresses the limitation of unclear recruitment strategies, lack of participatory system design, and the need for human-centered designs [1][5][7].\n* **Cognitive alignment of explanation techniques:** Test different explanation techniques with end-users to ensure that methods align properly with human cognitive processes [1]. This addresses the limitation that current visual explanations may not be sufficient and lack human-professor-like qualities to build clinical trust [3].\n* **Standardization of validation and frameworks:** Develop urgent, uniform interpretability measures and standardized XAI validation frameworks [5][7]. This addresses the lack of standardized evaluation frameworks, inconsistent interpretability across modalities, and failure to comply with regulatory standards like the EU AI Act, FDA guidelines, and HIPAA [5].\n* **Real-world and longitudinal clinical validation:** Conduct longitudinal clinical validation and evaluate explanation fidelity, clinician trust, and usability in real-world settings rather than solely in controlled benchmark environments [5][7]. This directly addresses the limitation that thorough explanations are currently restricted to controlled settings and lack real-world usability evidence [5][7].\n* **Interdisciplinary and data-focused initiatives:** Foster interdisciplinary collaboration and international data-sharing initiatives to combat the shortage of ground truth data for explainability [3][9]. This addresses the limitation regarding the scarcity of ground-truth data required for robust explainability [3].",
+      "sources": [
+        {
+          "title": "User-Centered Methods in Explainable AI Development for Hospital Clinical Decision Support: A Scoping Review.",
+          "venue": "Studies in Health Technology and Informatics",
+          "year": 2025,
+          "quartile": "Q3",
+          "authors": "B. V. Van Dort, Thomas Engelsma, S. Medlock, L. Dusseljee-Peute",
+          "citationCount": 3,
+          "openAccessPdf": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250228",
+          "relevance": 0.677
+        },
+        {
+          "title": "A Reproducible Protocol for Developing and Evaluating Explainable Artificial Intelligence Frameworks in Healthcare Analytics.",
+          "venue": "Journal of Visualized Experiments",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Yashwant Dongre, Deepali A. Godse, Prawit Chumchu, Trupti G. Ghongade, Mohammad Israr",
+          "citationCount": 0,
+          "openAccessPdf": "",
+          "relevance": 0.676
+        },
+        {
+          "title": "Explainable AI in Diagnostic Radiology for Neurological Disorders: A Systematic Review, and What Doctors Think About It",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Yasir Hafeez, Khuhed Memon, M. al-Quraishi, Norashikin Yahya, Sami Elferik, Syed Saad Azhar Ali",
+          "citationCount": 35,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/2/168/pdf?version=1736781412",
+          "relevance": 0.672
+        },
+        {
+          "title": "Applications of Explainable Artificial Intelligence in Diagnosis and Surgery",
+          "venue": "Diagnostics",
+          "year": 2022,
+          "quartile": "Q2",
+          "authors": "Yiming Zhang, Ying Weng, J. Lund",
+          "citationCount": 283,
+          "openAccessPdf": "https://doi.org/10.3390/diagnostics12020237",
+          "relevance": 0.67
+        },
+        {
+          "title": "Explainable AI Applications in Healthcare: A Systematic Review",
+          "venue": "Algorithms",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Ojobo Agbo Eje, Sayed Mehedi Azim, Iman Dehzangi",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/1999-4893/19/6/488/pdf?version=1781706992",
+          "relevance": 0.651
+        },
+        {
+          "title": "Evaluating Explanations From AI Algorithms for Clinical Decision-Making: A Social Science-Based Approach",
+          "venue": "IEEE journal of biomedical and health informatics",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Suparna Ghanvatkar, Vaibhav Rajan",
+          "citationCount": 13,
+          "openAccessPdf": "https://doi.org/10.1101/2024.02.26.24303365",
+          "relevance": 0.622
+        },
+        {
+          "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of Methods, Applications, and Usability Challenges",
+          "venue": "Healthcare",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Qaiser Abbas, Woonyoung Jeong, S. Lee",
+          "citationCount": 243,
+          "openAccessPdf": "",
+          "relevance": 0.621
+        },
+        {
+          "title": "Can We Trust AI With Our Ears? A Cross-Domain Comparative Analysis of Explainability in Audio Intelligence",
+          "venue": "IEEE Access",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "Sudip Chakrabarty, Pappu Bishwas, Mainak Bandyopadhyay, Jérémie Sublime",
+          "citationCount": 5,
+          "openAccessPdf": "https://doi.org/10.1109/access.2025.3622161",
+          "relevance": 0.613
+        },
+        {
+          "title": "Uncloaking the black-box: the need for explainable artificial intelligence in clinical microbiology and infectious diseases applications",
+          "venue": "Frontiers in Public Health",
+          "year": 2026,
+          "quartile": "Q1",
+          "authors": "Sreya Pulakkat Warrier, Venkatesh Narasimhan, Eline Meijer, Yukino Gütlin, O. Nolte, Balaji Veeraraghavan, A. Egli",
+          "citationCount": 3,
+          "openAccessPdf": "https://public-pages-files-2025.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2026.1776922/pdf",
+          "relevance": 0.612
+        },
+        {
+          "title": "Can Artificial Intelligence Revolutionize the Diagnosis and Management of the Atrial Septal Defect in Children?",
+          "venue": "Diagnostics",
+          "year": 2024,
+          "quartile": "Q2",
+          "authors": "E. Cinteză, C. Vasile, Ș. Busnatu, Ionel Armat, A. D. Spînu, R. Vătășescu, Gabriela Duică, A. Nicolescu",
+          "citationCount": 10,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/14/2/132/pdf?version=1704685220",
+          "relevance": 0.608
+        }
+      ]
+    },
+    "how do researchers evaluate whether an explanation is trustworthy to clinicians?": {
+      "question": "How do researchers evaluate whether an explanation is trustworthy to clinicians?",
+      "answer": "## Current Approaches\n\nResearchers evaluate whether an explanation is trustworthy to clinicians using a variety of qualitative, quantitative, and social science-based methods:\n\n* **Survey-Based and Expert Evaluation:** Researchers gather feedback directly from medical experts and doctors through surveys and questionnaires. For example, a study on diagnosing Alzheimer's disease used a survey where five medical doctors with varying years of experience evaluated AI outputs (including clinical feature-based interpretations, MRI-based visual heat maps, and combined approaches) and reported their trust levels and confidence [7]. Similarly, studies use interviews and focus groups with physicians (and occasionally nurses) to test explanation techniques and understand if explanations align with clinical requirements [10].\n* **Alignment with Medical Knowledge and Physiological Principles:** Explanations are evaluated by assessing whether they correspond with established medical knowledge and known physiology. For instance, researchers check if feature attribution methods (like SHAP) identify primary drivers that match known endocrine physiology (such as TSH and FTI for thyroid disease) to support face validity [6], or if audio-based XAI methods confirm that models focus on clinically relevant features [9].\n* **Social Science-Based and Automated Knowledge Graph Metrics:** New evaluation methods draw on social science theories regarding how humans process explanations and use literature-derived biomedical knowledge graphs to quantify clinical literature support for AI explanations [2]. \n* **Quantitative Assessment Metrics:** Frameworks compute specific evaluation metrics for explanations, including faithfulness, fidelity, stability, accuracy, and general usefulness [1, 2, 4, 5].\n\n## Limitations\n\nThe excerpts explicitly state the following limitations regarding current evaluations and explanations:\n\n* Thorough explanation and clinical validation remain heterogeneous, largely confined to controlled settings, benchmark datasets, and simulated environments rather than real-world hospital integration [1, 5].\n* There is a notable lack of standardized evaluation frameworks, uniform interpretability measures, and automated metrics for evaluating the usefulness of explanations in clinical contexts [1, 2, 5].\n* Many current studies focus heavily on algorithmic prediction accuracy while paying less attention to the authenticity, user-friendliness, and practical usefulness of explanations for healthcare professionals [3, 5].\n* There is a shortage of ground truth data specifically for explainability [3].\n* Visual explanation methods alone (such as heat maps) may be insufficient; clinicians require more thorough, human professor-like explanations to build trust [3].\n* Some studies involving user evaluations suffer from methodological weaknesses, such as unclear recruitment strategies and insufficiently detailed analyses [10].\n* *(Inferred)* Most survey-based evaluations rely on very small sample sizes (e.g., only five doctors in one study [7]), which limits the generalizability of the reported trust scores.\n\n## Suggested Future Work\n\nBased on the limitations above, the following concrete research directions are suggested:\n\n* **Develop Automated Usefulness Metrics:** To address the lack of automated metrics for clinical usefulness [2], future work should design and validate computational scoring methods that gauge explanation utility based on clinician requirements without requiring manual surveys.\n* **Establish Standardized Evaluation Frameworks:** To overcome the absence of uniform interpretability measures and standardization [1, 5], researchers should develop standardized, reproducible validation protocols that align with strict regulatory standards (such as HIPAA, FDA, and EU AI Act guidelines).\n* **Conduct Large-Scale Real-World and Longitudinal Validation:** Moving beyond controlled settings and small expert cohorts (like the five-doctor survey in [7]), future studies should test XAI frameworks longitudinally in real-world clinical workflows with larger, more diverse groups of healthcare professionals [5, 10].\n* **Improve Qualitative Study Design and Diversity:** Addressing the unclear recruitment and analysis methods noted in user-centered studies [10], future research should employ rigorous qualitative methodologies and engage a broader spectrum of healthcare professionals (including diverse medical specialties and experience levels) early in the design process.",
+      "sources": [
+        {
+          "title": "Explainable AI Applications in Healthcare: A Systematic Review",
+          "venue": "Algorithms",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Ojobo Agbo Eje, Sayed Mehedi Azim, Iman Dehzangi",
+          "citationCount": 3,
+          "openAccessPdf": "https://www.mdpi.com/1999-4893/19/6/488/pdf?version=1781706992",
+          "relevance": 0.553
+        },
+        {
+          "title": "Evaluating Explanations From AI Algorithms for Clinical Decision-Making: A Social Science-Based Approach",
+          "venue": "IEEE journal of biomedical and health informatics",
+          "year": 2024,
+          "quartile": "Q1",
+          "authors": "Suparna Ghanvatkar, Vaibhav Rajan",
+          "citationCount": 13,
+          "openAccessPdf": "https://doi.org/10.1101/2024.02.26.24303365",
+          "relevance": 0.537
+        },
+        {
+          "title": "Explainable AI in Diagnostic Radiology for Neurological Disorders: A Systematic Review, and What Doctors Think About It",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Yasir Hafeez, Khuhed Memon, M. al-Quraishi, Norashikin Yahya, Sami Elferik, Syed Saad Azhar Ali",
+          "citationCount": 35,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/2/168/pdf?version=1736781412",
+          "relevance": 0.526
+        },
+        {
+          "title": "A Reproducible Protocol for Developing and Evaluating Explainable Artificial Intelligence Frameworks in Healthcare Analytics.",
+          "venue": "Journal of Visualized Experiments",
+          "year": 2026,
+          "quartile": "Q2",
+          "authors": "Yashwant Dongre, Deepali A. Godse, Prawit Chumchu, Trupti G. Ghongade, Mohammad Israr",
+          "citationCount": 0,
+          "openAccessPdf": "",
+          "relevance": 0.515
+        },
+        {
+          "title": "Explainable AI in Clinical Decision Support Systems: A Meta-Analysis of Methods, Applications, and Usability Challenges",
+          "venue": "Healthcare",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Qaiser Abbas, Woonyoung Jeong, S. Lee",
+          "citationCount": 243,
+          "openAccessPdf": "",
+          "relevance": 0.514
+        },
+        {
+          "title": "Enhancing Thyroid Disease Diagnosis With Machine Learning and Counterfactual Explainable AI",
+          "venue": "IEEE Access",
+          "year": 2026,
+          "quartile": "Q1",
+          "authors": "Mohammad Zahidul Alam, Rukshanda Rahman, Hasan Mahmud Sozib, Halima Ahmed, Adib Hossain, Anseena Anees Sabeena, Afia Fairooz Tasnim, Fahad Ahmed, Md Imran Sarkar, T. I. Erdei",
+          "citationCount": 5,
+          "openAccessPdf": "https://doi.org/10.1109/access.2026.3663497",
+          "relevance": 0.476
+        },
+        {
+          "title": "A Feature-Augmented Explainable Artificial Intelligence Model for Diagnosing Alzheimer’s Disease from Multimodal Clinical and Neuroimaging Data",
+          "venue": "Diagnostics",
+          "year": 2025,
+          "quartile": "Q2",
+          "authors": "Fatima Hasan Al-bakri, W. Bejuri, Mohammed Nasser Al-Andoli, R. Ikram, H. Khor, Yus Sholva, Umi Kalsom Md Ariffin, N. M. Yaacob, Z. Abas, Z. Abidin, S. A. Asmai, Asmala Ahmad, Ahmad Fadzli Nizam Abdul Rahman, H. Rahmalan, M. F. Abd Samad",
+          "citationCount": 8,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/15/16/2060/pdf?version=1755571205",
+          "relevance": 0.465
+        },
+        {
+          "title": "Societal Criticism towards COVID-19: Assessing the Theory of Self-Diagnosis Contrasted to Medical Diagnosis",
+          "venue": "Diagnostics",
+          "year": 2021,
+          "quartile": "Q2",
+          "authors": "Dimitra S. Mouliou, I. Pantazopoulos, K. Gourgoulianis",
+          "citationCount": 16,
+          "openAccessPdf": "https://www.mdpi.com/2075-4418/11/10/1777/pdf?version=1632821695",
+          "relevance": 0.462
+        },
+        {
+          "title": "Can We Trust AI With Our Ears? A Cross-Domain Comparative Analysis of Explainability in Audio Intelligence",
+          "venue": "IEEE Access",
+          "year": 2025,
+          "quartile": "Q1",
+          "authors": "Sudip Chakrabarty, Pappu Bishwas, Mainak Bandyopadhyay, Jérémie Sublime",
+          "citationCount": 5,
+          "openAccessPdf": "https://doi.org/10.1109/access.2025.3622161",
+          "relevance": 0.456
+        },
+        {
+          "title": "User-Centered Methods in Explainable AI Development for Hospital Clinical Decision Support: A Scoping Review.",
+          "venue": "Studies in Health Technology and Informatics",
+          "year": 2025,
+          "quartile": "Q3",
+          "authors": "B. V. Van Dort, Thomas Engelsma, S. Medlock, L. Dusseljee-Peute",
+          "citationCount": 3,
+          "openAccessPdf": "https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI250228",
+          "relevance": 0.446
+        }
+      ]
+    }
+  }
+}
